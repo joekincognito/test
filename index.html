@@ -1,14 +1,16 @@
 <!doctype html>
 <html>
 <head>
-
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
 <p>Hello Joe</p>
 <button onclick="scanFunction()">Scan</button>
 <script>
-//function scanFunction()
-//{
+$(document).ready(function(){
+function scanFunction()
+{
 cordova.plugins.barcodeScanner.scan(
       function (result) {
           alert("We got a barcode\n" +
@@ -20,7 +22,8 @@ cordova.plugins.barcodeScanner.scan(
           alert("Scanning failed: " + error);
       }
    );
-//}
+}
+});
 </script>
 	</body>
 	</html>
