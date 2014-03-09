@@ -1,29 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
 <p>Hello Joe</p>
-<button onclick="scanFunction()">Scan</button>
-<script>
-$(document).ready(function(){
-function scanFunction()
-{
-cordova.plugins.barcodeScanner.scan(
-      function (result) {
-          alert("We got a barcode\n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
-      }, 
-      function (error) {
-          alert("Scanning failed: " + error);
-      }
-   );
-}
-});
-</script>
+<a href="#" id="scan">SCAN THIS.</a>
+ <script type="text/javascript" src="phonegap.js"></script>
+ <script type="text/javascript" src="barcodescanner.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 	</body>
 	</html>
