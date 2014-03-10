@@ -26,6 +26,6 @@ versionCode: (optional) when building for Android, you can set the versionCode b
     <author href="http://joekincognito.com" email="joekincognito@gmail.com">
         Fake Name 
     </author>
-<!-- We'll include the Barcode plugin as an example -->
+<!-- We will include the Barcode plugin as an example -->
     <gap:plugin name="com.phonegap.plugins.barcodescanner" />
 </widget>
